@@ -1,16 +1,16 @@
 <template>
   <section class="app-section">
     <div class="md-mx-auto md-container--box">
-      <div v-if="drawnCards.length" class="play-card-section">
-        <template v-for="(item, index) in drawnCards">
-          <playing-card :key="index" :card="item"></playing-card>
+      <div v-if="drawnCardIndex" class="play-card-section">
+        <template v-for="index in drawnCardIndex">
+          <playing-card :key="index" :card="allCards[index - 1]"></playing-card>
         </template>
       </div>
       <div v-else>
         <div class="md-empty-state">
           <div class="md-empty-state__graphic">
             <div class="md-empty-state__graphic--circle">
-              <img src="/img/clubs.png" class="md-empty-state__img" />
+              <img alt="banner image" src="/img/clubs.png" class="md-empty-state__img" />
             </div>
           </div>
           <div class="md-empty-state__title">
@@ -27,8 +27,8 @@
         </div>
       </div>
     </div>
-    <div v-if="drawnCards.length" class="fab-container">
-      <button class="md-button md-button--raised md-button--primary" :disabled="!allCards.length" @click="handleDrawCards">
+    <div v-if="drawnCardIndex" class="fab-container">
+      <button class="md-button md-button--raised md-button--primary" :disabled="drawnCardIndex >= allCards.length" @click="handleDrawCards">
         Draw Cards
       </button>
     </div>
@@ -89,7 +89,7 @@ export default {
       suits: ['hearts', 'spades', 'diamonds', 'clubs'],
       cardValues: ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'],
       allCards: [],
-      drawnCards: []
+      drawnCardIndex: 0
     }
   },
   mounted() {
@@ -106,14 +106,11 @@ export default {
       this.allCards = this.shuffleCard(this.allCards)
     },
     handleDrawCards() {
-      if(!this.allCards.length) {
+      if(this.drawnCardIndex >= this.allCards.length) {
         return
       }
       let maxArrIndex = Math.min(this.allCards.length, 5);
-      for (let i = 0; i < maxArrIndex; i++) {
-        this.drawnCards.push(this.allCards[i])
-      }
-      this.allCards.splice(0, maxArrIndex)
+      this.drawnCardIndex += maxArrIndex
       this.$nextTick(() => {
         const el = document.querySelector(".play-card-section");
         el.scrollIntoView({ behavior: "smooth", block: "end" });
