@@ -1,4 +1,4 @@
-# Rando Card
+# Random Card
 
 ## Build Setup
 
