@@ -1,0 +1,121 @@
+// ==========  color  ========== //
+
+$color-black:                       0, 0, 0 !default;
+$color-white:                       255, 255, 255 !default;
+$color-primary:                     19, 90, 247 !default;
+$color-primary-light:               119, 141, 225 !default;
+$color-primary-dark:                0, 55, 203 !default;
+$color-accent:                      0, 210, 128 !default;
+$color-accent-light:                144, 243, 200 !default;
+$color-accent-dark:                 38, 143, 105 !default;
+$color-success:                     76, 175, 80 !default;
+$color-danger:                      211, 47, 47 !default;
+$color-warning:                     249, 168, 37 !default;
+$color-light:                       245, 245, 245 !default;
+$color-dark:                        33, 33, 33 !default;
+
+$color-danger-contrast:             255, 255, 255 !default;
+$color-primary-contrast:            255, 255, 255 !default;
+$color-primary-light-contrast:      255, 255, 255 !default;
+$color-primary-dark-contrast:       255, 255, 255 !default;
+$color-accent-contrast:             255, 255, 255 !default;
+$color-accent-light-contrast:       255, 255, 255 !default;
+$color-warning-contrast:            0, 0, 0 !default;
+$color-accent-dark-contrast:        255, 255, 255 !default;
+$color-success-contrast:            255, 255, 255 !default;
+$color-light-contrast:              0, 0, 0 !default;
+$color-dark-contrast:               255, 255, 255 !default;
+// Light theme
+$color-light-text:                  255, 255, 255, 1 !default;
+$color-light-secondary-text:        255, 255, 255, .7 !default;
+$color-light-app-bar:               245, 245, 245, 1 !default;
+$color-light-status-bar:            224, 224, 224, 1 !default;
+$color-light-background:            250, 250, 250, 1 !default;
+$color-light--card-background:      255, 255, 255, 1 !default;
+$color-light-disable:               255, 255, 255, .5 !default;
+$color-light-divider:               255, 255, 255, .12 !default;
+$color-light-dialog-scrim:          255, 255, 255, .32 !default;
+$color-light-button-hover:          255, 255, 255, .32 !default;
+$color-light-button-disable:        255, 255, 255, .5 !default;
+// Dark theme
+$color-dark-text:                   0, 0, 0, .87 !default;
+$color-dark-secondary-text:         0, 0, 0, .54 !default;
+$color-dark-app-bar:                33, 33, 33, 1 !default;
+$color-dark-status-bar:             0, 0, 0, 1 !default;
+$color-dark-background:             48, 48, 48, 1 !default;
+$color-dark--card-background:       66, 66, 66, 1 !default;
+$color-dark-disable:                0, 0, 0, .38 !default;
+$color-dark-divider:                0, 0, 0, .12 !default;
+$color-dark-dialog-scrim:           0, 0, 0, .32 !default;
+$color-dark-button-hover:           0, 0, 0, .5 !default;
+$color-dark-button-disable:         0, 0, 0, .26 !default;
+
+// ==========  Theme Variant  ========== //
+
+$theme-variant: "primary", "primary-light", "primary-dark", "accent", "accent-light", "accent-dark", "success", "warning", "danger", "light", "dark" !default;
+$button-variant: "primary", "primary-light", "primary-dark", "accent", "accent-light", "accent-dark", "success", "warning", "danger", "light", "dark" !default;
+$toggle-variant: "primary", "accent" !default;
+
+:root {
+  --color-black:                    #{$color-black};
+  --color-white:                    #{$color-white};
+  --color-primary:                  #{$color-primary};
+  --color-primary-light:            #{$color-primary-light};
+  --color-primary-dark:             #{$color-primary-dark};
+  --color-accent:                   #{$color-accent};
+  --color-accent-light:             #{$color-accent-light};
+  --color-accent-dark:              #{$color-accent-dark};
+  --color-success:                  #{$color-success};
+  --color-danger:                   #{$color-danger};
+  --color-warning:                  #{$color-warning};
+  --color-dark:                     #{$color-dark};
+  --color-light:                    #{$color-light};
+  --color-primary-contrast:         #{$color-primary-contrast};
+  --color-primary-light-contrast:   #{$color-primary-light-contrast};
+  --color-primary-dark-contrast:    #{$color-primary-dark-contrast};
+  --color-accent-contrast:          #{$color-accent-contrast};
+  --color-accent-light-contrast:    #{$color-accent-light-contrast};
+  --color-accent-dark-contrast:     #{$color-accent-dark-contrast};
+  --color-success-contrast:         #{$color-success-contrast};
+  --color-danger-contrast:          #{$color-danger-contrast};
+  --color-warning-contrast:         #{$color-warning-contrast};
+  --color-light-contrast:           #{$color-light-contrast};
+  --color-dark-contrast:            #{$color-dark-contrast};
+  // Light theme
+  --color-light-text:               #{$color-light-text};
+  --color-light-secondary-text:     #{$color-light-secondary-text};
+  --color-light-app-bar:            #{$color-light-app-bar};
+  --color-light-status-bar:         #{$color-light-status-bar};
+  --color-light-background:         #{$color-light-background};
+  --color-light--card-background:   #{$color-light--card-background};
+  --color-light-disable:            #{$color-light-disable};
+  --color-light-divider:            #{$color-light-divider};
+  --color-light-dialog-scrim:       #{$color-light-dialog-scrim};
+  --color-light-button-hover:       #{$color-light-button-hover};
+  --color-light-button-disable:     #{$color-light-button-disable};
+  // Dark theme
+  --color-dark-text:                #{$color-dark-text};
+  --color-dark-secondary-text:      #{$color-dark-secondary-text};
+  --color-dark-app-bar:             #{$color-dark-app-bar};
+  --color-dark-status-bar:          #{$color-dark-status-bar};
+  --color-dark-background:          #{$color-dark-background};
+  --color-dark--card-background:    #{$color-dark--card-background};
+  --color-dark-disable:             #{$color-dark-disable};
+  --color-dark-divider:             #{$color-dark-divider};
+  --color-dark-dialog-scrim:        #{$color-dark-dialog-scrim};
+  --color-dark-button-hover:        #{$color-dark-button-hover};
+  --color-dark-button-disable:      #{$color-dark-button-disable};
+  // Theme color
+  --color-app-theme: rgba(var(--color-light));
+  --color-app-theme-contrast: rgba(var(--color-dark));
+  --color-app-text: rgba(var(--color-dark-text));
+  --color-app-text-secondary: rgba(var(--color-dark-secondary-text));
+  --color-app-bar: rgba(var(--color-light-app-bar));
+  --color-app-status-bar: rgba(var(--color-light-status-bar));
+  --color-app-background: rgba(var(--color-light-background));
+  --color-app-card-background: rgba(var(--color-light--card-background));
+  --color-app-disable: rgba(var(--color-dark-disable));
+  --color-app-divider: rgba(var(--color-dark-divider));
+  --color-app-button-disable: rgba(var(--color-dark-button-disable));
+  --color-app-dialog-scrim: rgba(var(--color-dark-dialog-scrim));
+}

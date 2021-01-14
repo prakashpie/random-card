@@ -1,0 +1,59 @@
+
+// ==========  Typography  ========== //
+
+// stylelint-disable value-keyword-case
+$font-family-primary:                Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !default;
+$font-family-secondary:              null !default;
+$font-size-base:                     1rem !default;
+$font-weight-base:                   400 !default;
+$line-height-base:                   1.15 !default;
+
+// Typography font size
+$headline1-font-size:                $font-size-base * 6 !default;
+$headline2-font-size:                $font-size-base * 3.75 !default;
+$headline3-font-size:                $font-size-base * 3 !default;
+$headline4-font-size:                $font-size-base * 2.125 !default;
+$headline5-font-size:                $font-size-base * 1.5 !default;
+$headline6-font-size:                $font-size-base * 1.25 !default;
+$body1-font-size:                    $font-size-base * 1 !default;
+$subtitle1-font-size:                $font-size-base * 1 !default;
+$body2-font-size:                    $font-size-base * .875 !default;
+$subtitle2-font-size:                $font-size-base * .875 !default;
+$caption-font-size:                  $font-size-base * .75 !default;
+$overline-font-size:                 $font-size-base * .625 !default;
+
+// Typography font weight
+$headline1-font-weight:              300 !default;
+$headline2-font-weight:              300 !default;
+$headline3-font-weight:              400 !default;
+$headline4-font-weight:              400 !default;
+$headline5-font-weight:              400 !default;
+$headline6-font-weight:              500 !default;
+$body1-font-weight:                  400 !default;
+$subtitle1-font-weight:              500 !default;
+$body2-font-weight:                  400 !default;
+$subtitle2-font-weight:              400 !default;
+$caption-font-weight:                400 !default;
+$overline-font-weight:               400 !default;
+
+// Typography line height
+$headline1-line-height:              1.25 !default;
+$headline2-line-height:              1.25 !default;
+$headline3-line-height:              1.25 !default;
+$headline4-line-height:              1.25 !default;
+$headline5-line-height:              1.25 !default;
+$headline6-line-height:              1.25 !default;
+$body1-line-height:                  1.5 !default;
+$subtitle1-line-height:              1.5 !default;
+$body2-line-height:                  1.5 !default;
+$subtitle2-line-height:              1.5 !default;
+$caption-line-height:                1.5 !default;
+$overline-line-height:               1.5 !default;
+
+:root {
+  --font-family-primary:            #{$font-family-primary};
+  --font-family-secondary:          #{$font-family-secondary};
+  --font-size-base:                 #{$font-size-base};
+  --font-weight-base:               #{$font-weight-base};
+  --line-height-base:               #{$line-height-base};
+}
