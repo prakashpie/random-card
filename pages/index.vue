@@ -109,7 +109,7 @@ export default {
       if(this.drawnCardIndex >= this.allCards.length) {
         return
       }
-      let maxArrIndex = Math.min(this.allCards.length, 5);
+      let maxArrIndex = Math.min((this.allCards.length - this.drawnCardIndex), 5);
       this.drawnCardIndex += maxArrIndex
       this.$nextTick(() => {
         const el = document.querySelector(".play-card-section");
